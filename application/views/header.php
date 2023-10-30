@@ -161,7 +161,7 @@
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end">
                                         <li>
-                                            <a class="dropdown-item" href="#">
+                                            <a class="dropdown-item" href="<?=site_url()?>/setting">
                                                 <i class="bx bx-cog me-2"></i>
                                                 <span class="align-middle">Settings</span>
                                             </a>
