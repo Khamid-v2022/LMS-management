@@ -5,6 +5,10 @@ class MY_Controller extends CI_Controller {
     public function __construct() {
         parent::__construct();
         date_default_timezone_set('America/Los_Angeles');
+        if(!isset($this->session->user_data) || !$this->session->user_data['is_loggedin']){
+            redirect('auth');
+            return;
+        }
     }
 
 	public function generate_json($msg, $status = true){

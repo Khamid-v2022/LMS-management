@@ -39,7 +39,7 @@
                 <div class="card-footer">
                     <button class="btn btn-danger" id="replace_password">
                         Replace Password
-                        <i class="fas fa-spinner fa-spin d-none"></i>
+                        <i class="fas fa-spinner fa-spin ms-1 d-none"></i>
                     </button>
                 </div>
             </div>

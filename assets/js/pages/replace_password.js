@@ -61,7 +61,7 @@
             dataType: "json",
             success: function (response) {
                 $("#replace_password").removeAttr("disabled");
-                $("#generate_password").removeAttr("disabled", true);
+                $("#generate_password").removeAttr("disabled");
                 $("#replace_password .fa-spinner").addClass("d-none");
                 // response = JSON.parse(response);
                 if(response.status) {
