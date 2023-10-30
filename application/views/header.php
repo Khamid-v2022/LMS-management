@@ -61,7 +61,7 @@
         <!-- Place this tag in your head or just before your close body tag. -->
         <script async defer src="https://buttons.github.io/buttons.js"></script>
         <script type="text/javascript">
-            var SITE_URL = "<?=site_url()?>/";
+            var SITE_URL = "<?=site_url()?>";
             var BASE_URL = "<?=base_url()?>";
         </script>
     </head>
@@ -95,7 +95,7 @@
                         </li>
                         <!-- Replace Password -->
                         <li class="menu-item <?=$page_name=='Users' ? 'active':'' ?>">
-                            <a href="<?=site_url()?>/Users" class="menu-link">
+                            <a href="<?=site_url()?>users" class="menu-link">
                                 <i class="menu-icon tf-icons bx bx-user"></i>
                                 <div data-i18n="Basic">Users</div>
                             </a>
@@ -156,18 +156,18 @@
                                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                     <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                                         <div class="avatar avatar-online">
-                                        <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                        <img src="../assets/img/avatars/default.png" alt class="w-px-40 h-auto rounded-circle" />
                                         </div>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end">
                                         <li>
-                                            <a class="dropdown-item" href="<?=site_url()?>/setting">
+                                            <a class="dropdown-item" href="<?=site_url()?>setting">
                                                 <i class="bx bx-cog me-2"></i>
                                                 <span class="align-middle">Settings</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="<?=site_url()?>/auth/sign_out">
+                                            <a class="dropdown-item" href="<?=site_url()?>auth/sign_out">
                                                 <i class="bx bx-power-off me-2"></i>
                                                 <span class="align-middle">Log Out</span>
                                             </a>

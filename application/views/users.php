@@ -13,9 +13,9 @@
                                 <th>email</th>
                                 <th>password</th>
                                 <th>Screen Name</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
+                                <th>Full Name</th>
                                 <th>Gender</th>
+                                <th>Updated At</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -25,9 +25,9 @@
                                     <td><?=$user['email']?></td>
                                     <td><?=$user['password']?></td>
                                     <td><?=$user['screen_name']?></td>
-                                    <td><?=$user['first_name']?></td>
-                                    <td><?=$user['last_name']?></td>
+                                    <td><?=$user['first_name'] . " " . $user['last_name']?></td>
                                     <td><?=$user['sex']==0?'Male':'Female'?></td>
+                                    <td><?=$user['updated_at']?></td>
                                 </tr>
                             <?php }?>
                         </tbody>

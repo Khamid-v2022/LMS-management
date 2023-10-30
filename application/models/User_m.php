@@ -12,7 +12,7 @@ class User_m extends CI_Model {
     public function getList($where = NULL) {
         if($where)
             $this->db->where($where);
-        return $this->db->get($this->table)->result_array();
+        return $this->db->order_by('updated_at', 'DESC')->get($this->table)->result_array();
     }
 
     public function update($info, $where){
